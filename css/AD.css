@@ -1,0 +1,118 @@
+/*广告*/
+div#myADsmall {
+    width: 250px;
+    height: 300px;
+    background-color: #fcfcfc;
+    /* border: 1px solid #cccccc; */
+    position: fixed;
+    bottom: 0;
+    right: 2px;
+    margin-bottom: 10px;
+    transition: all .5s linear;
+    z-index: 999;
+}
+
+div#myADsmall.closeAD {
+    margin-bottom: -300px;
+}
+
+div#myADsmall * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+div#myADsmall > .ADheader {
+    position: relative;
+    height: 36px;
+    /* background-color: #cccccc; */
+}
+
+div#myADsmall > .ADheader > img {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    height: 26px;
+    width: auto;
+}
+
+div#myADsmall > .ADheader > i {
+    position: absolute;
+    color: #989898;
+    font-size: 18px;
+    top: 16px;
+    cursor: pointer;
+}
+
+div#myADsmall > .ADheader > i:nth-of-type(1) {
+    right: 48px;
+}
+
+div#myADsmall > .ADheader > i:nth-of-type(2) {
+    right: 14px;
+}
+
+div#myADsmall > .ADcontent {
+    padding: 4px 10px;
+}
+
+div#myADsmall > .ADcontent > .ADlarge {
+    position: relative;
+}
+
+div#myADsmall > .ADcontent > .ADlarge > img {
+    width: 230px;
+    height: 120px;
+}
+
+div#myADsmall > .ADcontent > .ADlarge > span {
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 4px;
+    background-color: rgba(0, 0, 0, .5);
+    overflow: hidden;
+    height: 28px;
+    font-size: 15px;
+    color: #ffffff;
+    line-height: 28px;
+    padding: 0 10px;
+    text-align: center;
+}
+
+div#myADsmall > .ADcontent > .ADlist {
+    margin-top: 6px;
+}
+
+div#myADsmall > .ADcontent > .ADlist > ul {
+}
+
+div#myADsmall > .ADcontent > .ADlist > ul > li {
+    list-style: none;
+    border-top: 1px solid #cccccc;
+    height: 60px;
+    /* background-color: #cccccc; */
+    margin-top: 1px;
+    position: relative;
+}
+
+div#myADsmall > .ADcontent > .ADlist > ul > li > img {
+    width: 60px;
+    height: 40px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+
+div#myADsmall > .ADcontent > .ADlist > ul > li > span {
+    display: block;
+    height: 40px;
+    width: 160px;
+    /* background-color: #dddddd; */
+    position: absolute;
+    top: 12px;
+    left: 69px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #6f6e6e;
+}

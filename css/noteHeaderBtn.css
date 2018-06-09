@@ -1,0 +1,120 @@
+﻿/* 文章内容顶部的按钮组CSS */
+div#noteHeaderBtn {
+    height: 30px;
+    width: 510px;
+    text-align: center;
+    position: absolute;
+    top: -77px;
+    left: 50%;
+    margin-left: -255px;
+}
+
+div#noteHeaderBtn > div {
+    /* border: 1px solid #000000; */
+    height: 30px;
+    box-sizing: border-box;
+    display: inline-block;
+    width: 100px;
+    line-height: 28px;
+    border-radius: 20px;
+    font-family: Arial;
+    font-size: 13px;
+    cursor: pointer;
+    color: #ffffff;
+    position: relative;
+    text-indent: 22px;
+}
+
+div#noteHeaderBtn > div > span {
+    display: inline-block;
+    width: 20px;
+    height: 18px;
+    /* background-color: #ffffff; */
+    position: absolute;
+    top: 4px;
+    left: 8px;
+}
+
+div#noteHeaderBtn > #resultPreview > span {
+    background-image: url(http://6990373.s21i-6.faiusr.com/4/ABUIABAEGAAgvZWmzAUo54f2twUw3gQ4_go.png);
+    background-repeat: no-repeat;
+    background-size: 110px;
+    background-position: -81px -23px;
+    height: 20px;
+}
+
+div#noteHeaderBtn > #sourceCode > span {
+    background-image: url(http://6990373.s21i-6.faiusr.com/4/ABUIABAEGAAgvZWmzAUo54f2twUw3gQ4_go.png);
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position: -72px -43px;
+    height: 20px;
+}
+
+div#noteHeaderBtn > #becomeFriends > span {
+    background-image: url(http://6990373.s21i-6.faiusr.com/4/ABUIABAEGAAgvZWmzAUo54f2twUw3gQ4_go.png);
+    background-repeat: no-repeat;
+    background-size: 110px;
+    background-position: -79px -74px;
+    /* height: 20px; */
+    width: 22px;
+}
+
+div#noteHeaderBtn > #noteAward > span {
+    background-image: url(http://6990373.s21i-6.faiusr.com/4/ABUIABAEGAAgvZWmzAUo54f2twUw3gQ4_go.png);
+    background-repeat: no-repeat;
+    background-size: 106px;
+    background-position: -77px 1px;
+}
+
+div#noteHeaderBtn > div:not(:last-of-type) {
+    margin-right: 30px;
+}
+
+div#resultPreview {
+    background-color: #4389CE;
+    border: 2px solid #4389CE;
+}
+
+div#resultPreview:hover {
+    background-color: #1f7cd8;
+    border: 2px solid #1267bb;
+}
+
+div#sourceCode {
+    background-color: #5DB75D;
+    border: 2px solid #5DB75D;
+}
+
+div#sourceCode:hover {
+    background-color: #2bb52b;
+    border: 2px solid #27a027;
+}
+
+#module12 #sourceCode > a {
+    font-family: Arial;
+    font-size: 13px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+div#becomeFriends {
+    background-color: #EFAD4D;
+    border: 2px solid #EFAD4D;
+}
+
+div#becomeFriends:hover {
+    background-color: #f7a734;
+    border: 2px solid #e48e10;
+}
+
+div#noteAward {
+    background-color: #F05050;
+    border: 2px solid #F05050;
+}
+
+div#noteAward:hover {
+    background-color: #fb2323;
+    border: 2px solid #d80101;
+}
+

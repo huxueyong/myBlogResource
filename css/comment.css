@@ -1,0 +1,22 @@
+﻿/* 顶部导航区域固定在顶部 */
+#webHeaderTable {
+    position: fixed;
+    z-index: 1;
+}
+
+/*首页主题内容居中CSS代码*/
+.fullmeasureOuterContent {
+    margin: 50px 190px 0 190px;
+}
+
+/*将网站底部的公共代码段隐藏*/
+div#navBarContainer {
+    display: none;
+}
+
+#webFooter {
+    width: auto !important;
+    margin: 0 210px;
+    border-left: 1px solid #2E3344;
+    border-right: 1px solid #2E3344;
+}

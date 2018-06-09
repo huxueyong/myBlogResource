@@ -1,0 +1,696 @@
+﻿/* 顶部导航区域背景色 */
+#webHeaderTable {
+    background: #3A3F51 !important;
+}
+
+/* 底部区域背景色 */
+#webFooterTable {
+    background-color: #3A3F51;
+}
+
+/*左侧边导航CSS代码*/
+
+.sideBar * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sideBar {
+    text-align: left;
+    background-color: #3A3F51;
+    width: 190px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    /* border-right: 1px solid #2E2C36; */
+    z-index: 66;
+}
+
+.sideBarHeader {
+    text-align: center;
+    height: 220px;
+    border-bottom: 2px solid #2e3344;
+}
+
+.sideBarHeader > div.myblog {
+    height: 50px;
+    background-color: #F05050;
+    line-height: 50px;
+    color: #ffffff;
+    /* font-family: Arial; */
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.sideBarHeader > img {
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin: 20px auto 10px;
+    border-radius: 50%;
+}
+
+.sideBarHeader > p.aboutMe {
+    color: #b4b6bd;
+}
+
+.sideBarHeader > p.myMotto {
+    color: #b4b6bd;
+    margin-top: 5px;
+}
+
+.sideBarBody {
+    /* position: fixed; */
+    width: 190px;
+    height: calc(100% - 230px);
+    /* top: 250px; */
+    /* bottom: 0; */
+    overflow: hidden;
+}
+
+.sideBarContent {
+    width: 207px;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding: 0 3px 0 0;
+    color: #b4b6bd;
+    font-family: Arial;
+}
+
+#recommend {
+    width: 190px;
+}
+
+#recommend > p {
+    font-size: 13px;
+    color: #8b8e99;
+    margin: 10px 0;
+    padding-left: 10px;
+}
+
+#recommend > h2 {
+    font-size: 13px;
+    font-weight: normal;
+    position: relative;
+    padding-left: 36px;
+    height: 40px;
+    /* background-color: #ffffff; */
+    line-height: 40px;
+    cursor: pointer;
+}
+
+div#recommend > h2:hover {
+    background-color: #32374A;
+    color: #ffffff;
+}
+
+div#recommend > h2:hover > a {
+    color: #ffffff;
+}
+
+#recommend > h2 > i {
+    width: 20px;
+    margin-right: 10px;
+}
+
+div#recommend > h2 > a {
+    color: #b4b6bd;
+    text-decoration: none;
+    display: block;
+}
+
+div#recommend > h2 > a > i {
+    width: 20px;
+    margin-right: 10px;
+}
+
+div#recommend > div {
+    background-color: #303447;
+    display: none;
+}
+
+div#recommend > div > h3 {
+    font-size: 13px;
+    font-weight: normal;
+    /* height: 50px; */
+    line-height: 22px;
+    padding: 15px 20px 15px 58px;
+}
+
+div#recommend > div > h3:hover {
+    color: #ffffff;
+    background-color: #32374A;
+}
+
+div#recommend > div > h3 > a {
+    text-decoration: none;
+    color: #b4b6bd;
+    display: block;
+}
+
+div#recommend > div > h3:hover > a {
+    color: #ffffff;
+}
+
+div.sideNavBar {
+    width: 190px;
+    border-top: 2px solid #2e3344;
+    margin-top: 10px;
+}
+
+div.sideNavBar > p {
+    font-size: 13px;
+    color: #8b8e99;
+    margin: 10px 0;
+    padding-left: 10px;
+}
+
+div.sideNavBar > h2 {
+    font-size: 14px;
+    font-weight: normal;
+    position: relative;
+    padding-left: 40px;
+    height: 50px;
+    /* background-color: #ffffff; */
+    line-height: 50px;
+    cursor: pointer;
+}
+
+div.sideNavBar > h2:hover {
+    background-color: #32374A;
+    color: #ffffff;
+}
+
+div.sideNavBar > h2 > i {
+    width: 20px;
+    margin-right: 10px;
+}
+
+div.sideNavBar > div {
+    background-color: #303447;
+    display: none;
+}
+
+div.sideNavBar > div > h3 {
+    font-size: 12px;
+    font-weight: normal;
+    /* height: 50px; */
+    line-height: 22px;
+    padding: 15px 20px 15px 60px;
+}
+
+div.sideNavBar > div:nth-of-type(3) > h3 {
+    padding: 15px 0;
+    text-align: center;
+}
+
+div.sideNavBar > div > h3:hover {
+    color: #ffffff;
+    background-color: #32374A;
+}
+
+div.sideNavBar > div > h3 > a {
+    display: block;
+    color: #b4b6bd;
+    text-decoration: none;
+}
+
+div.sideNavBar > div > h3:hover > a {
+    color: #ffffff;
+}
+
+/* 右侧文章目录CSS */
+#menu * {
+    padding: 0;
+    margin: 0;
+}
+
+#menu {
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0px;
+    width: 190px;
+    background-color: #3A3F51;
+    color: #ffffff;
+    padding: 0;
+    z-index: 66;
+    overflow: hidden;
+    display: none;
+}
+
+#menuHeader {
+    height: 50px;
+    text-align: center;
+}
+
+#menuHeader img {
+    width: 60px;
+    height: 60px;
+    margin-top: 10px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+}
+
+#menuHeader > p {
+    line-height: 50px;
+    height: 50px;
+    background-color: #F05050;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+#menuHeader > div {
+    /* text-align: left; */
+    margin-top: 3px;
+    display: none;
+}
+
+#menuHeader > div > span {
+    font-size: 12px;
+    display: inline-block;
+    margin-right: 5px;
+    /* border-bottom: 1px solid #7A7E8A; */
+    padding: 0 3px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+#menuBody {
+    width: 208px;
+    height: 900px;
+    height: calc(100% - 70px);
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+#menuBody * {
+    margin: 0;
+    padding: 0;
+}
+
+#menuBody > h2 {
+    background-color: #3A3F51;
+    padding: 13px 2px 13px 12px;
+    font-family: Arial;
+    font-weight: normal;
+    position: relative;
+    padding-right: 2px;
+    border-bottom: 2px solid #2E3344;
+    transition: all .5s linear;
+    overflow: hidden;
+    line-height: 24px;
+}
+
+#menuBody > h2:hover {
+    background-color: #2E3344;
+    border-bottom: 2px solid #F05050;
+}
+
+#menuBody > h2.checked {
+    border-bottom: 2px solid #F05050;
+    background-color: #2E3344;
+}
+
+#menuBody > h2 > a {
+    color: #B4B6BD;
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+    font-size: 12px;
+    padding-right: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#menuBody > h2.checked > a {
+    color: #ffffff;
+}
+
+#menuBody > h2:hover > a {
+    color: #ffffff;
+    white-space: inherit;
+}
+
+#menuBody > h2 > a > i {
+    font-size: 14px;
+    position: absolute;
+    top: 19px;
+    right: 10px;
+}
+
+#menuBody > h2 > a > i.fa.fa-minus-square-o {
+    display: none;
+}
+
+#menuBody > h2.checked > a > i.fa.fa-minus-square-o {
+    display: block;
+}
+
+#menuBody > h2 > a > i.fa.fa-plus-square-o {
+    display: block;
+}
+
+#menuBody > h2.checked > a > i.fa.fa-plus-square-o {
+    display: none;
+}
+
+#menuBody > div > h3 {
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 18px;
+    position: relative;
+    cursor: pointer;
+    background-color: #2E3344;
+    margin-bottom: 1px;
+}
+
+#menuBody > div > h3 > a {
+    padding: 10px;
+    color: #B4B6BD;
+    text-align: justify;
+    display: block;
+    font-size: 12px;
+    line-height: 24px;
+}
+
+#menuBody > div > h3:hover > a {
+    color: #ffffff;
+}
+
+#menuBody > div > h3.checked > a {
+    color: #ffffff;
+}
+
+#menuBody > div > h3 > a > i {
+    position: absolute;
+    top: 17px;
+    left: 14px;
+}
+
+#menuBody > div > h3:hover > a > i {
+    color: #F05050;
+}
+
+#menuBody > div > h3.checked > a > i {
+    color: #F05050;
+}
+
+#menuBody > div {
+    background-color: #3A3F51;
+    display: none;
+    padding: 2px 0;
+}
+
+#menuBody > div:hover > h3 {
+
+}
+
+#menuBody > div > ul {
+    background-color: #2E3344;
+    list-style: none;
+    display: none;
+}
+
+#menuBody > div > ul > li {
+    border-bottom: 1px solid #2E3344;
+    background-color: #3A3F51;
+}
+
+#menuBody > div > ul > li > h4 {
+    /*height: 30px;*/
+    /*padding-left: 30px;*/
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: normal;
+    color: #ffffff;
+    line-height: 30px;
+    /*margin-bottom: 2px;*/
+    /*background-color: #464D5D;*/
+    position: relative;
+}
+
+#menuBody > div > ul > li > h4 > a {
+    color: #B4B6BD;
+    display: block;
+    padding: 6px 0 6px 34px;
+    transition: all .3s linear;
+}
+
+#menuBody > div > ul > li > h4 > a:hover {
+    color: #ffffff;
+    cursor: pointer;
+    padding: 6px 0 6px 30px;
+}
+
+#menuFooter {
+    height: 61px;
+    /*background-color: #ffffff;*/
+    margin-top: 20px;
+    display: none;
+}
+
+/*文章页面右侧特别鸣谢CSS代码*/
+div#myADside {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    background-color: #3A3F51;
+    width: 210px;
+    display: none;
+}
+
+div#myADsideHeader {
+    line-height: 60px;
+    height: 60px;
+    background-color: #F05050;
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+}
+
+div#myADsideBody {
+    height: 900px;
+    height: calc(100% - 60px);
+    overflow-x: hidden;
+    width: 227px;
+    overflow-y: scroll;
+    padding-top: 20px;
+    padding-left: 19px;
+}
+
+div#myADsideBody > a {
+    overflow: hidden;
+    display: block;
+    width: 170px;
+    margin-bottom: 20px;
+    border: 2px solid #ffffff;
+}
+
+div#myADsideBody > a > img {
+    width: 170px;
+}
+
+div#myADsideBody > a > img:hover {
+    transition: all 0.6s;
+    transform: scale(1.2);
+}
+
+div#myADsideFooter {
+    display: none;
+}
+
+/* 文章下方赞赏按钮以及弹出模态框CSS */
+#award {
+    /* background-color: #f7f7f7; */
+    margin: 60px auto;
+}
+
+#awardOpenBtn {
+    height: 36px;
+    width: 120px;
+    border-radius: 18px;
+    background-color: #F05050;
+    text-align: center;
+    line-height: 36px;
+    margin: 0 auto;
+    color: #ffffff;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#award > p:nth-of-type(2) {
+    text-align: center;
+    font-size: 13px;
+    margin-top: 18px;
+    color: #999999;
+}
+
+#award > p > span {
+    display: inline-block;
+    width: 20px;
+    height: 16px;
+    /* border: 1px solid #ffffff; */
+    /* background-color: #ffffff; */
+    position: relative;
+    top: 4px;
+    left: 0;
+    margin-right: 5px;
+    background-image: url(http://6990373.s21i-6.faiusr.com/4/ABUIABAEGAAg9NuQzAUo0Ne5tQMw3gQ4_go.png);
+    background-repeat: no-repeat;
+    background-size: 120px;
+    background-position: -89px -1px;
+}
+
+div#awardContent {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    background-color: rgba(58, 63, 81, .6);
+    display: none;
+}
+
+div#awardRichCon {
+    width: 300px;
+    height: 380px;
+    overflow: hidden;
+    background-color: #ffffff;
+    margin: 100px auto;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+    position: relative;
+}
+
+div#awardHeader {
+    height: 55px;
+    background-color: #F3F3F3;
+    border-bottom: 1px solid #E5E5E5;
+    position: relative;
+}
+
+div#awardHeader > p {
+    font-size: 19px;
+    line-height: 55px;
+    color: #58666E;
+    font-family: Arial;
+    text-indent: 30px;
+}
+
+span#awardClose {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    /* background-color: #ffffff; */
+    margin-right: 4px;
+    margin-top: 6px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #a4aeb3;
+    /* padding: 0; */
+    line-height: 20px;
+}
+
+div#awardBody {
+    height: 250px;
+    width: 265px;
+    overflow: hidden;
+    margin: 0 auto;
+    border-bottom: 1px solid #E5E5E5;
+    position: relative;
+}
+
+div#awardBody > p {
+    text-align: center;
+    font-size: 14px;
+    font-family: Arial;
+    font-weight: 600;
+    height: 60px;
+    line-height: 60px;
+}
+
+div#awardBody > img {
+    width: 167px;
+    height: 167px;
+    display: block;
+    margin: 0 auto;
+}
+
+div#awardFooter {
+    height: 70px;
+    text-align: center;
+    padding-top: 18px;
+}
+
+div#awardFooter > p {
+    height: 36px;
+    text-align: center;
+    display: inline-block;
+    padding: 0 14px;
+    margin-left: 5px;
+    margin-right: 5px;
+    line-height: 36px;
+    color: #ffffff;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    /* box-sizing: border-box; */
+}
+
+p#zfbBtn {
+    background-color: #23B7E5;
+    border: 2px solid #23B7E5;
+}
+
+p#zfbBtn:hover {
+    background-color: #19A9D5;
+    border: 2px solid #189EC8;
+}
+
+p#wxBtn {
+    background-color: #27C24C;
+    border: 2px solid #27c24c;
+}
+
+p#wxBtn:hover {
+    background-color: #23AD44;
+    border: 2px solid #20A03F;
+}
+
+div#awardFooter > p > span {
+    width: 23px;
+    height: 20px;
+    display: inline-block;
+    /* background-color: #ff00aa; */
+    margin-right: 6px;
+    position: relative;
+    top: 6px;
+}
+
+p#zfbBtn > span {
+    background-image: url(http://6990373.s21i-6.faiusr.com/4/ABUIABAEGAAgopKRzAUoxLyEkAcw3gQ4_go.png);
+    background-repeat: no-repeat;
+    background-size: 103px;
+    background-position: -76px -20px;
+}
+
+#wxBtn > span {
+    background-image: url(http://6990373.s21i-6.faiusr.com/4/ABUIABAEGAAgopKRzAUoxLyEkAcw3gQ4_go.png);
+    background-repeat: no-repeat;
+    background-size: 103px;
+    background-position: -51px -20px;
+}

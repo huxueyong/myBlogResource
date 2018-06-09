@@ -1,0 +1,454 @@
+.noteStyle01 * {
+    margin: 0;
+    padding: 0;
+}
+
+.noteStyle01 {
+    box-sizing: border-box;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    font-family: Arial;
+    color: #000000;
+    font-size: 14px;
+}
+
+.noteStyle01 > blockquote {
+    /* box-shadow: 0px 0px 7px rgba(0,0,0,0.1); */
+    border: 1px solid #2F3444;
+    padding: 10px 16px;
+    color: #2F3444;
+    /* border-bottom-right-radius: 30px; */
+    text-align: justify;
+    font-size: 14px;
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.noteStyle01 > blockquote.infoTig {
+    /* margin-left: 65px; */
+    padding: 1em 0;
+    border: none;
+    border-bottom: 1px solid #2F3444;
+    border-top: 1px solid #2F3444;
+    /* background-color: #f9f9f9; */
+}
+
+.noteStyle01 > blockquote.infoTig > span {
+    /* border: 1px solid #000000; */
+    position: absolute;
+    display: block;
+    width: 110px;
+    height: 46px;
+    top: -34px;
+    left: 0px;
+    background-color: #ffffff;
+    background-image: url(http://6990373.s21i-6.faiusr.com/4/ABUIABAEGAAgoOioyAUorvPR5gUwZDj0Aw.png);
+    background-size: 46px;
+    background-repeat: no-repeat;
+    background-position: 0 -184px;
+}
+
+.noteStyle01 > blockquote.infoTig > p {
+    font-size: 13px;
+}
+
+.noteStyle01 > blockquote > div {
+    position: absolute;
+    left: 24px;
+    top: -28px;
+    /* border: 1px solid #000000; */
+    height: 27px;
+    padding: 0px 18px 0px 29px;
+    line-height: 30px;
+    font-size: 13px;
+    text-align: center;
+    letter-spacing: 3px;
+    background-color: #353535;
+    color: #ffffff;
+    border-top-right-radius: 30px;
+}
+
+.noteStyle01 > blockquote > img {
+    width: 70px;
+    position: absolute;
+    top: -74px;
+    left: -11px;
+}
+
+.noteStyle01 > blockquote > :first-child {
+    margin-top: 1em;
+}
+
+.noteStyle01 > blockquote > :last-child {
+    margin-bottom: 0px;
+}
+
+.noteStyle01 > p.blockquoteTig {
+    margin-bottom: 0;
+    padding: 2px 0;
+    width: 110px;
+    height: 30px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #001D26;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-weight: bold;
+}
+
+.noteStyle01 > p.infoTig {
+    position: relative;
+    margin-bottom: 0;
+    top: 10px;
+    margin-left: 58px;
+    z-index: 100;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.noteStyle01 > blockquote > p {
+    margin: 1em 0;
+    line-height: 2em;
+}
+
+.noteStyle01 > blockquote.infoTig, .noteStyle01 > blockquote.warningTig, .noteStyle01 > blockquote.discussTig, .noteStyle01 > blockquote.errorTig, .noteStyle01 > blockquote.addTig {
+    /* margin-left: 65px; */
+    padding: 1em 2em;
+    border: none;
+    border: 1px solid #2F3444;
+    /* background-color: #f9f9f9; */
+}
+
+.noteStyle01 > blockquote.infoTig > span, .noteStyle01 > blockquote.warningTig > span, .noteStyle01 > blockquote.discussTig > span, .noteStyle01 > blockquote.errorTig > span, .noteStyle01 > blockquote.addTig > span {
+    /* border: 1px solid #000000; */
+    position: absolute;
+    display: block;
+    width: 110px;
+    height: 46px;
+    top: -34px;
+    left: -2px;
+    background-color: #ffffff;
+    background-image: url(http://6990373.s21i-6.faiusr.com/4/ABUIABAEGAAgoOioyAUorvPR5gUwZDj0Aw.png);
+    background-size: 46px;
+    background-repeat: no-repeat;
+
+}
+
+.noteStyle01 > blockquote.infoTig > span {
+    background-position: 0 -184px;
+}
+
+.noteStyle01 > blockquote.warningTig > span {
+    background-position: 0 -138px;
+}
+
+.noteStyle01 > blockquote.discussTig > span {
+    background-position: 0 0;
+}
+
+.noteStyle01 > blockquote.errorTig > span {
+    background-position: 0 -92px;
+}
+
+.noteStyle01 > blockquote.addTig > span {
+    background-position: 0 -46px;
+}
+
+.noteStyle01 > blockquote.infoTig > p, .noteStyle01 > blockquote.warningTig > p, .noteStyle01 > blockquote.discussTig > p, .noteStyle01 > blockquote.errorTig > p, .noteStyle01 > blockquote.addTig > p {
+    font-size: 13px;
+}
+
+.noteStyle01 > p.infoTig, .noteStyle01 > p.warningTig, .noteStyle01 > p.discussTig, .noteStyle01 > p.errorTig, .noteStyle01 > p.addTig {
+    position: relative;
+    margin-bottom: 0;
+    top: 10px;
+    margin-left: 65px;
+    z-index: 100;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.noteStyle01 > table {
+    width: 760px;
+    border-collapse: collapse;
+    margin: 30px auto;
+}
+
+.noteStyle01 > table thead {
+    background-color: #f7f7f7;
+}
+
+.noteStyle01 > table th {
+    text-align: center;
+}
+
+.noteStyle01 > table th, .noteStyle01 > table td {
+    border: 1px solid #ccc;
+    padding: 6px 2px;
+}
+
+.noteStyle01 > h2 {
+    font-size: 24px;
+    font-family: Arial;
+    border-bottom: 1px solid #cccccc;
+    margin: 30px 0;
+    position: relative;
+    height: 36px;
+    line-height: 36px;
+}
+
+.noteStyle01 > h2 > i {
+    color: #ffffff;
+    background-color: #000000;
+    width: 32px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.noteStyle01 > h3 {
+    font-size: 18px;
+    margin: 30px 0;
+    position: relative;
+    height: 36px;
+    line-height: 36px;
+}
+
+.noteStyle01 > h4 {
+    position: relative;
+    font-size: 15px;
+    margin: 30px 0;
+}
+
+.noteStyle01 > p {
+    text-align: justify;
+    font-size: 14px;
+    color: #000000;
+    line-height: 2;
+    margin: 1.5em 0;
+    text-indent: 30px;
+}
+
+.noteStyle01 > p > img.img-small {
+    width: 172px;
+}
+
+.noteStyle01 > p > img {
+    display: block;
+    margin: 50px auto;
+    border: 10px solid #f1f1f1;
+    max-width: 800px;
+    height: auto;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.noteStyle01 > pre {
+    margin: 0 0 30px 0;
+    border-radius: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.noteStyle01 > p.codeTig {
+    margin-bottom: 0px;
+    height: 40px;
+    color: #F7F7F7;
+    background-color: #1e1f19;
+    font-weight: bold;
+    line-height: 40px;
+    text-indent: 20px;
+}
+
+.noteStyle01 ul {
+    box-sizing: border-box;
+    width: 780px;
+    background-color: #F7F7F7;
+    padding: 18px 38px;
+    border: 1px dotted #272822;
+    margin: 30px auto;
+    border-radius: 5px;
+}
+
+.noteStyle01 ul li {
+    line-height: 36px;
+    font-size: 14px;
+    /* font-weight: bold; */
+    padding-left: 12px;
+    color: #272822;
+}
+
+.noteStyle01 ol {
+    background-color: #F7F7F7;
+    padding: 18px 38px;
+    border-left: 2px solid #848484;
+}
+
+.noteStyle01 ol li {
+    line-height: 36px;
+    font-size: 14px;
+    padding-left: 11px;
+    color: #000000;
+}
+
+.noteStyle01 > p.ulTig {
+    margin-bottom: 2px;
+    padding: 0;
+    height: 30px;
+    margin-top: 40px;
+}
+
+.noteStyle01 > p.ulTig > span {
+    /* border: 1px solid #000000; */
+    border-top: 4px solid #FF404B;
+    border-bottom: none;
+    padding: 0 11px;
+    display: inline-block;
+    height: 29px;
+    /* width: 60px; */
+    background-color: #001D26;
+    color: #ffffff;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.noteStyle01 ul.ul-learnObj {
+    list-style: none;
+    border: 1px solid #001D26;
+    padding: 18px 12px 0;
+    margin-top: 0;
+    background-color: #ffffff;
+}
+
+.noteStyle01 ul.ul-learnObj > li {
+    height: 36px;
+    /* padding: 0; */
+    margin-bottom: 18px;
+    /* line-height: 40px; */
+    /* font-size: 15px; */
+    /* vertical-align: middle; */
+}
+
+.noteStyle01 ul.ul-learnObj > li > img {
+    height: 31px;
+    margin-right: 26px;
+    display: inline-block;
+}
+
+.noteStyle01 ul.ul-learnObj > li > span {
+    display: inline-block;
+    height: 36px;
+    /* margin-bottom: 10px; */
+    position: relative;
+    top: -11px;
+    font-size: 14px;
+}
+
+.noteStyle01 strong {
+    color: #FF404B;
+    background-color: #FFE8EA;
+    padding: 5px 8px;
+    /* font-weight: normal; */
+    margin: 0 6px;
+}
+
+.noteStyle01 > p.removed {
+    display: none;
+}
+
+div.iQuestion {
+    margin: 0;
+    padding: 0;
+}
+
+div.iQuestion > h2 {
+    position: relative;
+    font-size: 16px;
+    color: #F05050;
+    padding-top: 30px;
+    padding-left: 50px;
+    margin: 0;
+    font-weight: normal;
+}
+
+div.iQuestion > h2:not(:first-of-type) {
+    border-top: 1px solid #cccccc;
+    margin: 30px 0;
+}
+
+div.iQuestion > h2 > span.question {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 30px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: #f05050;
+    color: #ffffff;
+    font-weight: normal;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    font-size: 16px;
+}
+
+div.iQuestion > h2 > span.answer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: -60px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: #3A3F51;
+    color: #ffffff;
+    font-weight: normal;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    font-size: 16px;
+}
+
+div.iQuestion > h3 {
+    font-size: 15px;
+    padding-left: 50px;
+}
+
+div.iQuestion > p {
+    margin: 30px 0;
+    line-height: 2;
+    padding-left: 50px;
+    font-size: 15px;
+    /*text-indent: 30px;*/
+}
+
+div.iQuestion > p.codeTig {
+    margin: 30px 0 0 50px;
+    height: 36px;
+    background-color: #1E1E1E;
+    color: #ffffff;
+    padding-left: 16px;
+    line-height: 36px;
+}
+
+div.iQuestion > p > strong {
+    color: #FF404B;
+    background-color: #FFE8EA;
+    padding: 5px 8px;
+    margin: 0;
+    font-weight: bold;
+}
+
+div.iQuestion > pre {
+    border-radius: 0;
+    margin: 0 0 30px 50px;
+}
+
+div.iQuestion > ul {
+    width: auto;
+    margin: 30px 0 30px 50px;
+}

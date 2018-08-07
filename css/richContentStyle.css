@@ -1,11 +1,11 @@
 ﻿div#noteRichContent > .richNoteTitle {
     line-height: 50px;
-    font-size: 24px;
+    font-size: 30px;
     font-weight: bold;
     border-bottom: 4px double #A9A9A9;
     color: #f05050;
     font-family: Arial;
-    padding: 12px 60px;
+    padding: 30px 60px;
 }
 
 .naTitie {
@@ -176,9 +176,8 @@ span.naSourceName {
     border-bottom: 2px solid #001D26;
     margin: 2em 0;
     position: relative;
-    height: 36px;
     line-height: 36px;
-    padding-bottom: 12px;
+    padding-bottom: 16px;
 }
 
 .richContent > h2 > i {
@@ -248,31 +247,46 @@ p.imgContainer > p {
     display: inline-block;
     text-indent: 0;
     position: relative;
-    padding: 6px;
-    border: 1px solid #dddddd;
+    padding: 4px;
+    border: 1px solid #cccccc;
     background: #f1f1f1;
 }
 
 p.imgContainer > p>img {
-    width: 360px;
+    max-width: 600px;
     border: 1px solid #dddddd;
 }
 
 span#seelargeImg {
-    position: absolute;
-    top: 0;
+/*    position: absolute;
+    top: 50%;
     left: 50%;
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    background: #f05050;
+    display: none;
+    width: 100px;
+    height: 120px;
     color: #ffffff;
-    line-height: 30px;
+    line-height: 50px;
     cursor: pointer;
     transform: translate(-50%,-50%);
-    border: 4px solid #e2e2e2;
-    border-radius: 50%;
+    background: url(http://118.89.242.134/myBlogResource/img/ui/sfds7483275hdgjhety439875u.png) no-repeat left top;
+    background-size: 100px;*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+    line-height: 50px;
+    cursor: pointer;
+    /* transform: translate(-50%,-50%); */
+    background: #0000002b url(http://118.89.242.134/myBlogResource/img/ui/sfds7483275hdgjhety439875u.png) no-repeat center;
+    background-size: 100px;
 }
+
+p.imgContainer:hover span#seelargeImg {
+    display: block;
+}66
 
 .richContent > pre {
     margin: 0 0 30px 0;
@@ -389,4 +403,24 @@ span#seelargeImg {
 .richContent > p>a {
     color: #007cff;
     font-weight: bold;
+}
+
+
+div#loadingDiv {
+    position: fixed;
+    background: #333333;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 2000;
+}
+
+.loadingCon {
+    width: 400px;
+    height: 300px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-200px,-200px);
 }

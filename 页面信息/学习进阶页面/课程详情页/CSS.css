@@ -1,0 +1,8 @@
+#menu {
+    display: block;
+}
+
+/*通栏模块的高度改为自适应*/
+div#module1443 {
+    height: auto !important;
+}

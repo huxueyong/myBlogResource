@@ -1,0 +1,185 @@
+.fullmeasureOuterContent {
+    margin: 50px 0 0 190px;
+    background: #eee url(http://118.89.242.134/myBlogResource/img/mindMap/mind_banner.jpg) no-repeat left top;
+    background-size: 100%;
+}
+
+
+
+#nav {
+    margin-left: 95px;
+}
+
+.mind-map-top-img {
+    height: 300px;
+    width: 400px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.gear-box {
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.gear-item-shadow-1 {
+    width: 60px;
+    height: 60px;
+    background: url(http://118.89.242.134/myBlogResource/img/mindMap/gear-item-shadow-1.png) no-repeat 0 0;
+    position: absolute;
+    left: 148px;
+    top: 28px;
+    z-index: 2;
+    transform: rotate(0deg);
+    animation: ring 10s infinite linear;
+}
+
+.gear-item-1 {
+    width: 46px;
+    height: 46px;
+    background: url(http://118.89.242.134/myBlogResource/img/mindMap/gear-item-1.png) no-repeat 0 0;
+    position: absolute;
+    left: 155px;
+    top: 36px;
+    z-index: 3;
+    transform: rotate(0deg);
+    animation: ring 10s infinite linear;
+}
+
+.gear-item-shadow-2 {
+    width: 70px;
+    height: 70px;
+    background: url(http://118.89.242.134/myBlogResource/img/mindMap/gear-item-shadow-2.png) no-repeat 0 0;
+    position: absolute;
+    left: 182px;
+    top: 11px;
+    z-index: 2;
+    transform: rotate(0deg);
+    animation: backring 14s infinite linear;
+}
+
+.gear-item-2 {
+    width: 60px;
+    height: 60px;
+    background: url(http://118.89.242.134/myBlogResource/img/mindMap/gear-item-2.png) no-repeat 0 0;
+    position: absolute;
+    left: 187px;
+    top: 16px;
+    z-index: 3;
+    transform: rotate(0deg);
+    animation: backring 14s infinite linear;
+}
+
+.gear-bg {
+    width: 140px;
+    height: 152px;
+    background: url(http://118.89.242.134/myBlogResource/img/mindMap/gear-bg.png) no-repeat 0 0;
+    position: absolute;
+    top: 48px;
+    left: 50%;
+    z-index: 1;
+    transform: translateX(-50%);
+    background-size: 140px;
+}
+
+@keyframes ring {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes backring {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+.mind-map-top-describe {
+    position: absolute;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 700;
+    top: 220px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.mind-map-richContent * {
+    margin: 0;
+    padding: 0;
+}
+
+ul.mind-map-list {
+    list-style: none;
+}
+
+ul.mind-map-list:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+li.mind-map-item {
+    width: 450px;
+    float: left;
+    margin-bottom: 100px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all .5s linear;
+}
+
+li.mind-map-item:hover {
+    margin-top: -10px;
+    margin-bottom: 110px;
+}
+
+li.mind-map-item:nth-child(odd) {
+    margin-right: 100px;
+}
+
+li.mind-map-item:nth-child(odd)>.mind-map-name {
+    background: #3A3F51;
+}
+
+li.mind-map-item:nth-child(even)>.mind-map-name {
+    background: #f05050;
+}
+
+.mind-map-img {
+    height: 280px;
+    width: 446px;
+    margin-bottom: 10px;
+    border: 2px solid #cccccc;
+}
+
+.mind-map-img>img {
+    width: 446px;
+    height: 280px;
+}
+
+.mind-map-name {
+    font-family: Arial;
+    height: 43px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 43px;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+
+li.mind-map-item:nth-child(odd)>.mind-map-name {
+    background: #3A3F51;
+}
+
+li.mind-map-item:nth-child(even)>.mind-map-name {
+    background: #f05050;
+}
+

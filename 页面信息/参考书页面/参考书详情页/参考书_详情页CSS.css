@@ -1,0 +1,216 @@
+.fullmeasureOuterContent {
+    margin: 50px 240px 0 190px;
+}
+#menu {
+    display: block;
+    width: 240px;
+}
+#menuBody {
+    width: 257px;
+}
+
+#menuHeader {
+    height: 50px;
+    background-color: #F05050;
+}
+
+/*#menuHeader > div {
+    display: block;
+}*/
+
+#menuHeader > div>span.slideUpAll {
+    width: 60px;
+    height: 20px;
+    border: 1px solid #ffffff75;
+    line-height: 20px;
+    margin: 0;
+    color: #ffffff75;
+}
+#menuHeader > div>span.slideUpAll:hover {
+    color: #ffffff;
+    border: 1px solid #ffffff;
+}
+div#module1427 {
+    height: auto !important;
+}
+div#module1428 {
+    overflow: visible !important;
+}
+.formMiddleContent.formMiddleContent1428 {
+    overflow: visible !important;
+}
+div#bookContentContainer {
+    position: relative;
+}
+div#aboutBook {
+    height: 48px;
+    background: #3A3F51;
+    position: relative;
+}
+
+
+div#aboutBook>.bookCover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 56px;
+    height: 56px;
+    margin-left: -36px;
+    margin-top: -13px;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 6px;
+    background: #ffffff;
+    border: 3px solid #3A3F51;
+}
+
+div#aboutBook>.bookCover>img {
+    height: 56px;
+}
+div#aboutBook>.bookName {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 50px;
+    width: 700px;
+    line-height: 48px;
+    font-size: 14px;
+    /* font-weight: bold; */
+    font-family: Arial;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    -webkit-text-overflow: ellipsis;
+    -moz-text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #ffffff;
+    letter-spacing: 0.05em;
+}
+div#aboutBook>.bookBtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 48px;
+    height: 150px;
+    transform: translateX(100%);
+    overflow: hidden;
+}
+div#aboutBook>.bookBtn>a {
+    display: block;
+    color: #ffffff;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 16px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-color: #3A3F51;
+    padding: 8px 10px;
+}
+/*div#aboutBook>.bookBtn>a:not(:last-child) {
+    margin-right: 40px;
+}*/
+div#aboutBook>.bookBtn>a:hover {
+    background: #f05050;
+    color: #ffffff;
+}
+div#aboutBook>.bookBtn>a.articleCatalogues.checked {
+    border: 1px solid #f05050;
+    background: #f05050;
+    color: #ffffff;
+}
+div#bookContentHeader {
+    height: 60px;
+    padding: 0 40px;
+}
+div#bookContentHeader>.bookConTitle {
+    line-height: 60px;
+    font-size: 16px;
+    font-family: Arial;
+    font-weight: bold;
+    border-bottom: 1px dashed #b5b5b5;
+    padding: 0 10px;
+}
+
+div#bookContentBody {
+    padding: 10px 60px 60px;
+    font-size: 14px;
+    font-family: Arial;
+    line-height: 2;
+    color:#000000;
+    min-height:500px;
+    letter-spacing: 0.05em;
+}
+div#bookContentBody>.noBookContent {
+    height: 500px;
+    background: url(http://i2.fuimg.com/604780/2208835bc220d4e3.png) no-repeat center;
+    background-size: 230px;
+}
+div#bookContentBody>h2 {
+    font-size: 15px;
+}
+div#bookContentBody>p {
+    text-indent: 2em;
+    margin: 20px 0;
+    text-align: justify;
+}
+
+div#bookContentBody p>code {
+    color: #f05050;
+    background: #f9f2f4;
+    padding: 1px 6px;
+    border-radius: 3px;
+    font-weight: 700;
+    font-size: 13px;
+    font-family: Microsoft YaHei;
+}
+div#bookContentBody>p.codeTig {
+    margin-bottom: 0;
+    background: #272822;
+    color: #ececec;
+    border-bottom: 1px solid #a0a0a0;
+    line-height: 30px;
+}
+div#bookContentBody>pre {
+    border-radius: 0;
+    margin: 0;
+}
+div#bookContentBody>blockquote {
+    margin: 30px 0;
+    background: #dcdcdc;
+    padding: 10px 10px 10px 100px;
+    min-height: 100px;
+    position: relative;
+}
+div#bookContentBody>blockquote:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 70px;
+    height: 100px;
+    top: 14px;
+    left: 10px;
+    background: url(http://i2.fuimg.com/604780/1f556653edc4cc1e.png) no-repeat top left;
+    background-size: 70px;
+}
+div#bookContentBody>blockquote>p {
+    font-size: 13px;
+}
+div#aboutBook>.articleCataloguesContainer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 240px;
+    height: 300px;
+    background: #3a3f51;
+    transform: translate(0,48px);
+    z-index: 2;
+    display: none;
+    border-top: 2px solid #f05050;
+}
+
+div#bookContentFooter {
+    height: 100px;
+    background: #3A3F51;
+}

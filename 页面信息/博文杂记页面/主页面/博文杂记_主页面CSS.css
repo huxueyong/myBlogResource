@@ -1,0 +1,198 @@
+#menu {
+    display: block;
+}
+/*div#module1401 {
+    overflow: visible !important;
+}
+#module1401 .formMiddleContent1401 {
+    overflow: visible !important;
+}*/
+/*中部撑满*/
+#module321 .fullmeasureContent {
+    width: 100% !important;
+}
+
+div#oncBody {
+    min-height: 630px;
+}
+div#originalNoteContainer>div#originalNoteList {
+    min-width: 900px;
+}
+
+div#originalNoteContainer>div#originalNoteList>div#oncBody>table {
+    background-color: #fff;
+    border-collapse: separate;
+    border-spacing: 0;
+    text-align: center;
+    font-size: 12px;
+    width: 100%;
+    font-family: Arial;
+}
+
+tbody#tbodyContent>tr:nth-of-type(even) {
+    background-color: #F8F9FB;
+}
+
+div#originalNoteContainer>div#originalNoteList>div#oncBody>table>tbody>tr:hover {
+    background-color: #edf0f5;
+}
+
+div#originalNoteContainer>div#originalNoteList>div#oncBody>table>thead>tr>th {
+    padding: 16px 0;
+    background-color: #F8F9FB;
+}
+
+div#originalNoteContainer>div#originalNoteList>div#oncBody>table>tbody>tr>td {
+    padding: 16px 4px;
+}
+div#originalNoteContainer>div#originalNoteList>div#oncBody>table>tbody>tr>td.noData {
+    height: 400px;
+    background: url(http://i2.cfimg.com/604780/320231c5fc2890d3.png) no-repeat center;
+}
+
+div#originalNoteContainer>div#originalNoteList>div#oncBody>table>tbody>tr>td.onTitle {
+    width: 35%;
+    position: relative;
+    padding-left: 70px;
+}
+div#originalNoteContainer>div#originalNoteList>div#oncBody>table>tbody>tr>td.onTitle>span {
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 22px;
+    line-height: 22px;
+    background-color: #2E3344;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 3px;
+    color: #ffffff;
+}
+div#originalNoteContainer>div#originalNoteList>div#oncBody>table>tbody>tr>td.onTitle>span.isOriginal {
+    background-color: #f05050;
+}
+div#originalNoteContainer>div#originalNoteList>div#oncBody>table>tbody>tr>td.onClasses {
+    width: 20%;
+}
+
+div#originalNoteContainer>div#originalNoteList>div#oncBody>table>tbody>tr>td.onClasses>span {
+    display: inline-block;
+    line-height: 22px;
+    color: #ffffff;
+    height: 22px;
+}
+
+div#originalNoteContainer>div#originalNoteList>div#oncBody>table>tbody>tr>td.onPubdate {
+    width: 10%;
+}
+
+div#originalNoteContainer>div#originalNoteList>div#oncBody>table>tbody>tr>td.onPubdate>span.pubdate {
+
+}
+
+div#originalNoteContainer>div#originalNoteList>div#oncBody>table>tbody>tr>td.onLabel {
+    width: 35%;
+}
+
+div#originalNoteContainer>div#originalNoteList>div#oncBody>table>tbody>tr>td.onLabel>span {
+    display: inline-block;
+    line-height: 15px;
+    color: #ffffff;
+    background-color: #f05050;
+    padding: 3px 10px;
+    margin: 0 4px 2px 0;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+div#originalNoteContainer>div#originalNoteList>div#oncBody>table>tbody>tr>td.onTitle>a {
+    font-size: 13px;
+    line-height: 2;
+    color: #2E3344;
+    text-decoration: none;
+}
+
+div#originalNoteContainer>div#originalNoteList>div#oncBody>table>tbody>tr:hover>td.onTitle>a {
+    text-decoration: underline;
+    color: #f05050;
+}
+
+div#originalNoteContainer>div#originalNoteList>div#oncBody>table>tbody>tr>td.onClasses>span.onsc {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    background-color: #2E3344;
+    width: 60px;
+}
+
+div#originalNoteContainer>div#originalNoteList>div#oncBody>table>tbody>tr>td.onClasses>span.onst {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    cursor: pointer;
+    background-color: #f05050;
+    width: 80px;
+}
+
+/*页码*/
+div#pageContent {
+    height: 100px;
+}
+
+div#pageContent>ol {
+    margin: 0 auto;
+    list-style: none;
+    text-align: center;
+    padding:0;
+}
+div#pageContent>ol>li {
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+}
+div#pageContent>ol>li:not(:last-child) {
+    margin-right: 12px;
+}
+div#pageContent>ol>li>a {
+    display: inline-block;
+    background-color: #ffffff;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-decoration: none;
+    color: #f05050;
+    box-sizing: border-box;
+    border: 1px solid #f05050;
+    font-size: 14px;
+    border-radius: 3px;
+}
+div#pageContent>ol>li.active>a {
+    background-color: #f05050;
+    color: #ffffff;
+    font-weight: bold;
+}
+div#pageContent>p.pageCount {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #3A3F51;
+    font-family: Arial;
+}
+
+div#oncFooter {
+    padding-top: 50px;
+}
+
+@media screen and (max-width: 1400px) {
+    div#originalNoteContainer>div#originalNoteList>div#oncBody>table .onTitle {
+        width: 50%;
+    }
+    div#originalNoteContainer>div#originalNoteList>div#oncBody>table .onClasses {
+        width: 40%;
+    }
+    div#originalNoteContainer>div#originalNoteList>div#oncBody>table .onPubdate {
+        display: none;
+    }
+
+    div#originalNoteContainer>div#originalNoteList>div#oncBody>table .onLabel {
+        display: none;
+    }
+}

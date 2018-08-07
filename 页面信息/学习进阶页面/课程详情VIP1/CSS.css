@@ -1,0 +1,172 @@
+#menu {
+    display:block;
+}
+
+div#noteRichContent {
+    margin: 0 20px;
+    background: #ffffff;
+}
+
+div#noteRichContent > .richNoteTitle {
+    padding: 12px 20px;
+}
+
+div#courseContainer {
+    background: #a9a9a9;
+}
+
+div#aboutCourse * {
+    /* padding: 0; */
+    margin: 0;
+    font-family: Arial;
+    overflow: hidden;
+}
+
+div#aboutCourse {
+    background: #3A3F51;
+    height: 124px;
+    position: relative;
+}
+
+div#aboutCourse:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translate(0,100%);
+    border-left: 20px solid transparent;
+    border-top: 16px solid #000000;
+    /* border-bottom: 8px solid #ffe001; */
+}
+
+div#aboutCourse:after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: translate(0,100%);
+    border-top: 16px solid #000000;
+    border-right: 20px solid transparent;
+}
+
+.courseImg {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    padding: 6px;
+    background: #ffffff;
+    z-index: 1;
+}
+
+.courseImg>img {
+    width: 150px;
+    height: 92px;
+}
+
+.courseVip {
+    position: absolute;
+    top: 36px;
+    left: 210px;
+    background: #f05050;
+    width: 60px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.courseName {
+    position: absolute;
+    top: 32px;
+    left: 276px;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.courseOption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 900px;
+    height: 40px;
+    background: #2E3344;
+}
+
+.courseOption>div {
+    position: absolute;
+    top: 12px;
+    height: 20px;
+    /* background: #f05050; */
+    color: #ffffff;
+    text-align: center;
+}
+
+.courseNumber {
+    left: 200px;
+    width: 200px;
+    line-height: 20px;
+}
+
+.courseGit {
+    left: 450px;
+    width: 150px;
+}
+
+.courseGit>span {
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+}
+
+span.courseGitIco {
+    width: 20px;
+    height: 20px;
+}
+
+span.courseGitIco>i.fa {
+    font-size: 20px;
+    font-family: FontAwesome !important;
+}
+
+span.courseGitUrl {
+    width: 100px;
+}
+
+span.courseGitUrl>a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.courseAddtime {
+    left: 650px;
+}
+
+span.courseSetion {
+    display: inline-block;
+    height: 32px;
+    background: #2E3344;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 32px;
+    padding: 0 16px;
+    border-radius: 4px;
+    position: relative;
+    margin-right: 16px;
+}
+
+span.courseSetion::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(100%,-50%);
+    border-left: 12px solid #2E3344;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+}

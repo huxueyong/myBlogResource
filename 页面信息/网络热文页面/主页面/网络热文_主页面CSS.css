@@ -1,0 +1,236 @@
+div#menu {
+    display: block;
+}
+/*div#networkArticleContent>.naheader {
+    background-color: #F8F9FB;
+    height: 60px;
+}*/
+div#networkArticleContent>.nabody {
+    background-color: #ffffff;
+    min-height: 650px;
+}
+
+div#networkArticleContent>.nabody>table {
+    background-color: #fff;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    text-align: center;
+    font-size: 12px;
+    font-family:Arial;
+    min-width:900px
+}
+div#networkArticleContent>.nabody>table>thead>tr {
+    background-color: #F8F9FB;
+}
+
+div#networkArticleContent>.nabody>table>tbody>tr:nth-of-type(even) {
+    background-color: #F8F9FB;
+}
+
+div#networkArticleContent>.nabody>table>tbody>tr:hover {
+    /* background-color: #f2f4f7; */
+}
+
+div#networkArticleContent>.nabody>table>thead>tr>th {
+    height: 50px;
+    font-size: 13px;
+    color: #000000;
+}
+div#networkArticleContent>.nabody>table>tbody>tr>td {
+    padding:10px 0;
+}
+
+div#networkArticleContent>.nabody>table>tbody>tr>td.naImg {
+    width: 14%;
+}
+
+div#networkArticleContent>.nabody>table>tbody>tr>td.naImg>img {
+    width: 50px;
+    height: 36px;
+    padding: 2px;
+    border: 1px solid #bbbbbb;
+}
+
+div#networkArticleContent>.nabody>table>tbody>tr:hover>td.naImg>img {
+    border: 1px solid #f05050;
+    background: #f05050;
+}
+
+div#networkArticleContent>.nabody>table>tbody>tr>td.naTitle {
+    width: 40%;
+}
+
+div#networkArticleContent>.nabody>table>tbody>tr>td.naTitle>a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 13px;
+    display: inline-block;
+    width: 100%;
+    line-height: 42px;
+}
+
+div#networkArticleContent>.nabody>table>tbody>tr:hover>td.naTitle>a {
+    color: #f05050;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+div#networkArticleContent>.nabody>table>tbody>tr>td.naSource {
+    width: 16%;
+    position: relative;
+}
+
+div#networkArticleContent>.nabody>table>tbody>tr>td.naSource>div{
+    width: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+div#networkArticleContent>.nabody>table>tbody>tr>td.naSource>div::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+div#networkArticleContent>.nabody>table>tbody>tr>td.naSource>div>span {
+    display: block;
+    height: 22px;
+    line-height: 22px;
+    float: left;
+}
+
+div#networkArticleContent>.nabody>table>tbody>tr>td.naSource>div>span.nast {
+    width: 40px;
+    background: #f05050;
+    color: #ffffff;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+div#networkArticleContent>.nabody>table>tbody>tr>td.naSource>div>span.nasID {
+    width: 80px;
+    background: #2e3344;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+div#networkArticleContent>.nabody>table>tbody>tr>td.naSource>div>span.naurl {
+    width: 30px;
+    background:#f05050;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius:3px;
+}
+
+div#networkArticleContent>.nabody>table>tbody>tr>td.naSource>div>span.naurl>a {
+    color: #ffffff;
+}
+
+div#networkArticleContent>.nabody>table>tbody>tr>td.naCategory {
+    width: 16%;
+    position: relative;
+}
+
+div#networkArticleContent>.nabody>table>tbody>tr>td.naCategory>div::after {
+    content:"";
+    clear:both;
+    display:block;
+}
+
+div#networkArticleContent>.nabody>table>tbody>tr>td.naCategory>div {
+    width: 138px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+
+div#networkArticleContent>.nabody>table>tbody>tr>td.naCategory>div>span {
+    display: block;
+    height: 22px;
+    line-height: 22px;
+    float: left;
+}
+
+div#networkArticleContent>.nabody>table>tbody>tr>td.naCategory>div>span.nacfID {
+    width: 50px;
+    background: #f05050;
+    color: #ffffff;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+div#networkArticleContent>.nabody>table>tbody>tr>td.naCategory>div>span.nacsID {
+    width: 88px;
+    background: #2e3344;
+    color: #ffffff;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    cursor:pointer;
+}
+
+div#networkArticleContent>.nabody>table>tbody>tr>td.naPubdate {
+    width: 14%;
+}
+
+div#networkArticleContent>.nabody>table>tbody>tr>td.noData {
+    height: 400px;
+    background: url(http://i4.cfimg.com/604780/ee2f60dbb0245d9e.jpg) no-repeat center;
+}
+
+div#networkArticleContent>.nabody>table>tbody>tr>td.noData:hover {
+    background-color: #ffffff;
+}
+
+div#fullmeasureContent329_1 {
+    width: 100% !important;
+}
+div#networkArticleContent>.nafooter {
+    margin-top: 60px;
+    height: 100px;
+}
+
+/*页码*/
+div.pageContent>ol {
+    margin: 0 auto;
+    list-style: none;
+    text-align: center;
+    padding:0;
+}
+div.pageContent>ol>li {
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+}
+div.pageContent>ol>li:not(:last-child) {
+    margin-right: 12px;
+}
+div.pageContent>ol>li>a {
+    display: inline-block;
+    background-color: #ffffff;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-decoration: none;
+    color: #f05050;
+    box-sizing: border-box;
+    border: 1px solid #f05050;
+    font-size: 14px;
+    border-radius: 3px;
+}
+div.pageContent>ol>li.active>a {
+    background-color: #f05050;
+    color: #ffffff;
+    font-weight: bold;
+}
+div.pageContent>p.pageCount {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #3A3F51;
+    font-family: Arial;
+}

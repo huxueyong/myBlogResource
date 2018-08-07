@@ -1,0 +1,481 @@
+.fullmeasureOuterContent {
+    /*margin-right: 220px;*/
+}
+#menu {
+    display: block;
+}
+#module1200 {
+    height: auto !important;
+}
+div#studyNoteContainer * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#module1408 {
+    background: none;
+    overflow: visible !important;
+}
+.forms .formMiddleContent {
+    overflow-x: visible !important;
+}
+
+div#snlBody {
+    min-height: 600px;
+}
+div#snlBody>ul.studyNoteListContent {
+    list-style: none;
+}
+div#snlBody>ul.studyNoteListContent>li.noData {
+    height: 600px;
+    background: url(http://i2.cfimg.com/604780/320231c5fc2890d3.png) no-repeat center;
+}
+div#snlBody>ul.studyNoteListContent>li.studyNoteItem {
+    width: 250px;
+    overflow: hidden;
+    float: left;
+    height: 320px;
+    /* padding: 30px; */
+    position: relative;
+    background-color: #ffffff;
+    margin-bottom: 30px;
+    margin-top: 0;
+    margin-left: 0;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 0px 1px #d0cdcd;
+    transition: all .3s;
+}
+div#snlBody>ul.studyNoteListContent>li.studyNoteItem:not(:nth-of-type(3n)) {
+    margin-right: 30px;
+}
+div#snlBody>ul.studyNoteListContent>li.studyNoteItem:after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: #f05050;
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+div#snlBody>ul.studyNoteListContent>li.studyNoteItem:hover {
+    box-shadow: 0px 0px 10px #f05050;
+    margin-top: -10px;
+    margin-bottom: 40px;
+    z-index: 2;
+}
+div#snlBody>ul.studyNoteListContent:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+div#snlBody>ul.studyNoteListContent>li.studyNoteItem>.snskilltype {
+    position: absolute;
+    background: #f05050;
+    top: 12px;
+    left: -13px;
+    height: 20px;
+    width: 120px;
+    transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);
+    -moz-transform: rotate(-30deg);
+    -webkit-transform: rotate(-30deg);
+    -o-transform: rotate(-30deg);
+    z-index: 2;
+}
+div#snlBody>ul.studyNoteListContent>li.studyNoteItem>.snskilltype>p {
+    line-height: 20px;
+    width: 76px;
+    /* background-color: #dddd45; */
+    margin-left: 12px;
+    /* display: none; */
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+}
+div#snlBody>ul.studyNoteListContent>li.studyNoteItem>.snImg {
+    height: 126px;
+    overflow: hidden;
+    position: relative;
+}
+div#snlBody>ul.studyNoteListContent>li.studyNoteItem>.snImg>.snImgContent {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform:  translateY(-50%);
+    -ms-transform:  translateY(-50%);
+    -moz-transform:  translateY(-50%);
+    -webkit-transform:  translateY(-50%);
+    -o-transform:  translateY(-50%);
+}
+div#snlBody>ul.studyNoteListContent>li.studyNoteItem>.snImg>.snImgContent>img {
+    width: 250px;
+}
+div#snlBody>ul.studyNoteListContent>li.studyNoteItem>.snTitle {
+    height: 40px;
+    margin: 6px 30px;
+}
+div#snlBody>ul.studyNoteListContent>li.studyNoteItem>.snTitle>h2 {
+    line-height: 40px;
+    font-size: 14px;
+    font-family: Arial;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+div#snlBody>ul.studyNoteListContent>li.studyNoteItem>.sndescription {
+    height: 70px;
+    /* background-color: #f8f8f8; */
+    margin: 0 30px;
+}
+div#snlBody>ul.studyNoteListContent>li.studyNoteItem>.sndescription>p {
+    height: 35px;
+    line-height: 35px;
+    color: #696c77;
+    font-family: "Microsoft Yahei";
+}
+div#snlBody>ul.studyNoteListContent>li.studyNoteItem>.sndescription>p>span {
+    font-weight: bold;
+    color: #000000;
+}
+div#snlBody>ul.studyNoteListContent>li.studyNoteItem>.snbutton {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    height: 32px;
+    width: 200px;
+    transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+div#snlBody>ul.studyNoteListContent>li.studyNoteItem>.snbutton>a {
+    display: block;
+    line-height: 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: Arial;
+    color: #808080;
+    border: 1px solid #efefef;
+    float: left;
+    width: 100px;
+}
+div#snlBody>ul.studyNoteListContent>li.studyNoteItem>.snbutton>a.snopen {
+    background-color: #ffffff;
+}
+div#snlBody>ul.studyNoteListContent>li.studyNoteItem:hover>.snbutton>a.snopen {
+    background-color: #f05050;
+    color: #ffffff;
+    border: 1px solid #f05050;
+}
+div#snlBody>ul.studyNoteListContent>li.studyNoteItem>.snbutton>a.snsource {
+    background-color: #f7f7f7;
+    color: #9a9a9a;
+}
+
+div#snlBody>ul.studyNoteListContent>li.studyNoteItem>.snbutton>a.snvip {
+    background-color: #f7f7f7;
+    color: #9a9a9a;
+}
+
+div#snlBody>ul.studyNoteListContent>li.studyNoteItem:hover>.snbutton>a.snsource {
+    background: #3A3F51;
+    border: 1px solid #3A3F51;
+    color: #ffffff;
+}
+
+div#snlBody>ul.studyNoteListContent>li.studyNoteItem:hover>.snbutton>a.snvip {
+    background: #3A3F51;
+    border: 1px solid #3A3F51;
+    color: #ffffff;
+}
+
+div#studyNoteMenuModal * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Microsoft YaHei;
+}
+
+div#studyNoteMenuModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 88;
+    background-color: rgba(0,0,0,.8);
+    display: none;
+}
+
+div#studyNoteMenuModalContainer {
+    background-color: #ffffff;
+    width: 900px;
+    height: 550px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+div#studyNoteMenuModal div#studyNoteMenuModalHeader {
+    margin-top: -90px;
+    text-align: center;
+    height: 185px;
+}
+div#studyNoteMenuModalHeader>.snmmHeaderImg {
+    height: 156px;
+}
+div#studyNoteMenuModalHeader>.snmmHeaderImg>img {
+    height: 156px;
+}
+div#studyNoteMenuModalHeader>h2 {
+    font-size: 22px;
+    color: #444d59;
+    font-weight: normal;
+}
+
+div#studyNoteMenuModalHeader>span {
+    display: block;
+    width: 30px;
+    height: 30px;
+    line-height: 24px;
+    font-size: 22px;
+    background-color: #ffffff;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    color: #f05050;
+    border: 2px solid #f05050;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+div#studyNoteMenuModalHeader>span:hover {
+    transform: rotate(90deg);
+    transition: all linear 0.2s;
+}
+
+iv#studyNoteMenuModalBody>div#snmmLeft {
+    width: 180px;
+    height: 360px;
+    background-color: #F9FAFB;
+    position: absolute;
+    top: 38px;
+    left: 24px;
+}
+
+div#studyNoteMenuModalBody {
+    position: relative;
+    margin: 20px 0 0;
+    height: 435px;
+}
+
+div#studyNoteMenuModalBody>div#snmmLeft {
+    width: 180px;
+    height: 360px;
+    background-color: #F9FAFB;
+    position: absolute;
+    top: 38px;
+    left: 30px;
+}
+
+div#studyNoteMenuModalBody>div#snmmLeft .snmmLeftHeader {
+    height: 140px;
+    /* background-color: #cccccc; */
+    text-align: center;
+    padding-top: 20px;
+}
+
+div#studyNoteMenuModalBody>div#snmmLeft .snmmLeftHeader>img {
+    width: 70px;
+}
+
+div#studyNoteMenuModalBody>div#snmmLeft .snmmLeftHeader>p {
+    line-height: 30px;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #444d59;
+    font-weight: bold;
+}
+
+div#studyNoteMenuModalBody>div#snmmLeft .snmmLeftbody {
+    text-align: center;
+    /* background-color: #ccccaa; */
+    height: 180px;
+}
+
+/*div#studyNoteMenuModalBody>div#snmmLeft .snmmLeftbody>a {*/
+    /*display: inline-block;*/
+    /*width: 110px;*/
+    /*height: 30px;*/
+    /*background-color: #f05050;*/
+    /*border-radius: 15px;*/
+    /*line-height: 30px;*/
+    /*text-decoration: none;*/
+    /*font-size: 14px;*/
+    /*color: #ffffff;*/
+/*}*/
+
+div#studyNoteMenuModalBody>div#snmmLeft .snmmLeftbody>img {
+    width: 100px;
+}
+
+div#studyNoteMenuModalBody>div#snmmLeft .snmmLeftbody>h2 {
+    font-size: 14px;
+    color: #444d59;
+    margin-top: 20px;
+}
+
+div#studyNoteMenuModalBody>div#snmmLeft .snmmLeftbody> p {
+    border: 2px solid #f05050;
+    background: #f05050;
+    color: #ffffff;
+    height: 30px;
+    border-radius: 15px;
+    width: 150px;
+    margin: 16px auto 0;
+    line-height: 26px;
+    font-size: 12px;
+}
+
+div#studyNoteMenuModalBody>div#snmmRight {
+    width: 657px;
+    height: 360px;
+    position: absolute;
+    top: 38px;
+    left: 230px;
+}
+div#studyNoteMenuModalBody>div#snmmRight>.snmmRightContainer {
+    position: relative;
+    height: 360px;
+    overflow-y: auto;
+}
+div#snmmListContainer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 640px;
+    background-color: #F9FAFB;
+    padding: 20px;
+    min-height: 360px;
+}
+div#scrollBar {
+    height: 360px;
+    width: 4px;
+    position: absolute;
+    right: 6px;
+    top: 0;
+    display: none;
+}
+div#scrollBarBtn {
+    position: absolute;
+    width: 10px;
+    height: 60px;
+    background-color: #B8BFC7;
+    border-radius: 5px;
+    left: -3px;
+    top: 0px;
+    cursor: pointer;
+}
+
+div#snmmListContainer>.noSncsection>div>h3>a {
+    display: block;
+    height: 20px;
+    line-height: 20px;
+    /* background-color: #cccccc; */
+    text-decoration: none;
+    cursor: pointer;
+    margin-bottom: 16px;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+div#snmmListContainer>.noSncsection>div>h3>a>span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    background-color: #3A3F51;
+    color: #ffffff;
+    border-radius: 50%;
+    line-height: 20px;
+    margin-right: 16px;
+    font-size: 13px;
+}
+div#snmmListContainer>.noSncsection.nodata>p {
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    font-size: 16px;
+    color: #f05050;
+}
+
+
+
+#snmmListContainer>h2 {
+    padding: 10px 0 10px 20px;
+    border-bottom:1px solid #3A3F51;
+}
+#snmmListContainer>h2:not(:nth-of-type(1)) {
+    margin-top: 10px;
+}
+#snmmListContainer>h2>a {
+    display: block;
+    height: 36px;
+    line-height: 36px;
+    font-size: 16px;
+}
+#snmmListContainer>h2>a>span {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-color: #f05050;
+    line-height: 24px;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 50%;
+    font-weight: normal;
+    font-size: 15px;
+    margin-right: 13px;
+}
+#snmmListContainer>div {
+    padding: 15px 0 4px 20px;
+}
+#snmmListContainer>div>h3>a {
+    display: block;
+    height: 20px;
+    line-height: 20px;
+    /* background-color: #cccccc; */
+    text-decoration: none;
+    cursor: pointer;
+    margin-bottom: 16px;
+    font-size: 15px;
+    font-weight: normal;
+}
+#snmmListContainer>div>h3>a.nodata {
+    text-align: center;
+    font-size: 12px;
+    color: #f05050;
+}
+#snmmListContainer>div>h3>a>span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    background-color: #3A3F51;
+    color: #ffffff;
+    border-radius: 50%;
+    line-height: 20px;
+    margin-right: 16px;
+    font-size: 13px;
+    margin-left: 2px;
+}

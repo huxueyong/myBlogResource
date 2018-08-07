@@ -1,0 +1,448 @@
+<script src="http://118.89.242.134/myBlogResource/js/gitCreatMenu.js"></script>
+<script src="http://118.89.242.134/myBlogResource/js/prismOkaidia.js"></script>
+<script src="http://118.89.242.134/myBlogResource/layer/layer.js"></script>
+<script type="text/javascript" src="http://cdn.webfont.youziku.com/wwwroot/js/wf/youziku.api.min.js"></script>
+
+<link href="http://118.89.242.134/myBlogResource/css/comment.css" rel="stylesheet">
+<link href="http://118.89.242.134/myBlogResource/css/prismOkaidia.css" rel="stylesheet">
+<link data-link="myBlogCSS" href="http://118.89.242.134/myBlogResource/css/myBlogStyle03.css" rel="stylesheet">
+<link href="http://118.89.242.134/myBlogResource/css/noteHeaderBtn.css" rel="stylesheet" />
+<link href="http://118.89.242.134/myBlogResource/css/richContentStyle.css" rel="stylesheet" />
+<!--<link href="http://118.89.242.134/myBlogResource/css/noteStyle01.css" rel="stylesheet" />-->
+<link href="http://118.89.242.134/myBlogResource/css/AD.css" rel="stylesheet" />
+<link href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<style>/*设置顶部导航区域，为了使搜索框可以超出父级元素显示*/
+#fk-webHeaderZone {
+    overflow: visible;
+}
+
+#navV2 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#navV2 .itemSelected tr>td {
+    border-bottom: 2px solid #f05050;
+}
+
+@media screen and (max-width: 1250px) {
+    /* #navV2 {
+          left: 210px;
+          margin-left:0;
+    }*/
+}
+
+div#g_main {
+    top: 0 !important;
+}
+.memberBar .right {
+    display: none;
+}
+#memberBar {
+    width: 150px;
+    margin: 0;
+}
+div#memberBarArea {
+    width: 150px;
+    background: none;
+    top: 12px !important;
+    right: 200px;
+    left: auto;
+}
+#memberBar span.userLabel {
+    color: #ffffff;
+}
+#memberBar a.exit {
+    color: #ffffff;
+}
+div#toolbarLeft {
+    margin-left: 0;
+}
+.toolbarArea {
+    min-width: auto;
+}
+.fk-toolTopBar {
+    min-width: auto;
+}
+.fk-toolTopBar {
+    height: 56px;
+    line-height: 56px;
+    border-bottom: none;
+    box-shadow: none;
+    right: 0;
+    width: auto;
+    top: 2px !important;
+}
+.toolItemText {
+    font-size: 12px;
+}
+.toolbarRight {
+    margin-right: 10px;
+}
+a.admToolItem.admTool-siteManage {
+    width: 66px;
+}
+a.admToolItem.admTool-serviceSupport.admTool-on.admToolItem {
+    width: 80px;
+}
+a.admToolItem.admTool-userCenter.admTool-on.admToolItem {
+    width: 60px;
+}
+a.admToolItem.admTool-saveAllSite {
+    width: 46px;
+}
+a.admToolItem.admTool-cancelAllSave {
+    width: 48px;
+}
+.navSubMenu .navStyle52 {
+    margin-top: 12px !important;
+}
+
+.navSubMenu .navStyle .center .item:not(:last-of-type) {
+    margin-bottom: 4px !important;
+}
+
+.navSubMenu .navStyle .subMenu{
+    margin-left: 4px !important;
+}
+.webNavTable {
+    height: 50px !important;
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    z-index: 65;
+    background-color: #3A3F51;
+}
+/*Loading层样式  开始*/
+.loading-container {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #222021;
+    z-index: 2000;
+}
+
+.loading-img-container {
+    width: 512px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-60%);
+    position: relative;
+}
+
+.loading-img-container .gear-box {
+    width: 512px;
+    height: 412px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.loading-img-container .gear-item-shadow-1 {
+    width: 40px;
+    height: 40px;
+    background: url(http://118.89.242.134/myBlogResource/img/loading/gear-item-shadow-1.png) no-repeat 0 0;
+    position: absolute;
+    left: 190px;
+    top: 58px;
+    z-index: 465;
+    transform: rotate(0deg);
+    animation: ring 10s infinite linear;
+    background-size: 40px;
+}
+
+.loading-img-container .gear-item-1 {
+    width: 30px;
+    height: 30px;
+    background: url(http://118.89.242.134/myBlogResource/img/loading/gear-item-1.png) no-repeat 0 0;
+    position: absolute;
+    left: 196px;
+    top: 62px;
+    z-index: 470;
+    transform: rotate(0deg);
+    animation: ring 10s infinite linear;
+    background-size: 30px;
+}
+
+.loading-img-container .gear-item-shadow-2 {
+    width: 40px;
+    height: 40px;
+    background: url(http://118.89.242.134/myBlogResource/img/loading/gear-item-shadow-2.png) no-repeat 0 0;
+    position: absolute;
+    left: 280px;
+    top: 62px;
+    z-index: 465;
+    transform: rotate(0deg);
+    animation: backring 6s infinite linear;
+    background-size: 40px;
+}
+
+.loading-img-container .gear-item-2 {
+    width: 30px;
+    height: 30px;
+    background: url(http://118.89.242.134/myBlogResource/img/loading/gear-item-2.png) no-repeat 0 0;
+    position: absolute;
+    left: 284px;
+    top: 64px;
+    z-index: 470;
+    transform: rotate(0deg);
+    animation: backring 6s infinite linear;
+    background-size: 30px;
+}
+
+.loading-img-container .gear-item-shadow-3 {
+    width: 55px;
+    height: 55px;
+    background: url(http://118.89.242.134/myBlogResource/img/loading/gear-item-shadow-3.png) no-repeat 0 0;
+    position: absolute;
+    left: 251px;
+    top: 0;
+    z-index: 465;
+    transform: rotate(0deg);
+    animation: ring 12s infinite linear;
+    background-size: 55px;
+}
+
+.loading-img-container .gear-item-3 {
+    width: 50px;
+    height: 50px;
+    background: url(http://118.89.242.134/myBlogResource/img/loading/gear-item-3.png) no-repeat 0 0;
+    position: absolute;
+    left: 258px;
+    top: 0;
+    z-index: 470;
+    transform: rotate(0deg);
+    animation: ring 12s infinite linear;
+    background-size: 50px;
+}
+
+.loading-img-container .gear-item-shadow-4 {
+    width: 50px;
+    height: 50px;
+    background: url(http://118.89.242.134/myBlogResource/img/loading/gear-item-shadow-4.png) no-repeat 0 0;
+    position: absolute;
+    left: 283px;
+    top: 22px;
+    z-index: 455;
+    transform: rotate(0deg);
+    animation: backring 12s infinite linear;
+    background-size: 50px;
+}
+
+.loading-img-container .gear-item-4 {
+    width: 40px;
+    height: 40px;
+    background: url(http://118.89.242.134/myBlogResource/img/loading/gear-item-4.png) no-repeat 0 0;
+    position: absolute;
+    left: 286px;
+    top: 30px;
+    z-index: 460;
+    transform: rotate(0deg);
+    animation: backring 12s infinite linear;
+    background-size: 40px;
+}
+
+.loading-img-container .gear-item-shadow-5 {
+    width: 46px;
+    height: 46px;
+    background: url(http://118.89.242.134/myBlogResource/img/loading/gear-item-shadow-5.png) no-repeat 0 0;
+    position: absolute;
+    left: 182px;
+    top: 18px;
+    z-index: 455;
+    transform: rotate(0deg);
+    animation: backring 4s infinite linear;
+    background-size: 46px;
+}
+
+.loading-img-container .gear-item-5 {
+    width: 36px;
+    height: 36px;
+    background: url(http://118.89.242.134/myBlogResource/img/loading/gear-item-5.png) no-repeat 0 0;
+    position: absolute;
+    left: 190px;
+    top: 23px;
+    z-index: 460;
+    transform: rotate(0deg);
+    animation: backring 4s infinite linear;
+    background-size: 36px;
+}
+
+.loading-img-container .gear-item-shadow-6 {
+    width: 50px;
+    height: 50px;
+    background: url(http://118.89.242.134/myBlogResource/img/loading/gear-item-shadow-6.png) no-repeat 0 0;
+    position: absolute;
+    left: 218px;
+    top: 0;
+    z-index: 405;
+    transform: rotate(0deg);
+    animation: ring 8s infinite linear;
+    background-size: 50px;
+}
+
+.loading-img-container .gear-item-6 {
+    width: 44px;
+    height: 44px;
+    background: url(http://118.89.242.134/myBlogResource/img/loading/gear-item-6.png) no-repeat 0 0;
+    position: absolute;
+    left: 226px;
+    top: 10px;
+    z-index: 410;
+    transform: rotate(0deg);
+    animation: ring 8s infinite linear;
+    background-size: 44px;
+}
+
+.loading-img-container .gear-item-shadow-7 {
+    width: 45px;
+    height: 45px;
+    background: url(http://118.89.242.134/myBlogResource/img/loading/gear-item-shadow-7.png) no-repeat 0 0;
+    position: absolute;
+    left: 246px;
+    top: 34px;
+    z-index: 405;
+    transform: rotate(0deg);
+    animation: ring 8s infinite linear;
+    background-size: 45px;
+}
+
+.loading-img-container .gear-item-7 {
+    width: 40px;
+    height: 40px;
+    background: url(http://118.89.242.134/myBlogResource/img/loading/gear-item-7.png) no-repeat 0 0;
+    position: absolute;
+    left: 250px;
+    top: 42px;
+    z-index: 410;
+    transform: rotate(0deg);
+    animation: ring 8s infinite linear;
+    background-size: 40px;
+}
+
+.loading-img-container .gear-item-shadow-8 {
+    width: 30px;
+    height: 30px;
+    background: url(http://118.89.242.134/myBlogResource/img/loading/gear-item-shadow-8.png) no-repeat 0 0;
+    position: absolute;
+    left: 182px;
+    top: 44px;
+    z-index: 395;
+    transform: rotate(0deg);
+    animation: backring 12s infinite linear;
+    background-size: 30px;
+}
+
+.loading-img-container .gear-item-8 {
+    width: 26px;
+    height: 26px;
+    background: url(http://118.89.242.134/myBlogResource/img/loading/gear-item-8.png) no-repeat 0 0;
+    position: absolute;
+    left: 184px;
+    top: 44px;
+    z-index: 400;
+    transform: rotate(0deg);
+    animation: backring 12s infinite linear;
+    background-size: 26px;
+}
+
+.loading-img-container .gear-item-shadow-9 {
+    width: 44px;
+    height: 44px;
+    background: url(http://118.89.242.134/myBlogResource/img/loading/gear-item-shadow-9.png) no-repeat 0 0;
+    position: absolute;
+    left: 234px;
+    top: 72px;
+    z-index: 395;
+    transform: rotate(0deg);
+    animation: backring 14s infinite linear;
+    background-size: 44px;
+}
+
+.loading-img-container .gear-item-9 {
+    width: 40px;
+    height: 40px;
+    background: url(http://118.89.242.134/myBlogResource/img/loading/gear-item-9.png) no-repeat 0 0;
+    position: absolute;
+    left: 236px;
+    top: 78px;
+    z-index: 400;
+    transform: rotate(0deg);
+    animation: backring 14s infinite linear;
+    background-size: 40px;
+}
+
+.loading-img-container .gear-item-shadow-10 {
+    width: 56px;
+    height: 56px;
+    background: url(http://118.89.242.134/myBlogResource/img/loading/gear-item-shadow-10.png) no-repeat 0 0;
+    position: absolute;
+    left: 200px;
+    top: 24px;
+    z-index: 395;
+    transform: rotate(0deg);
+    animation: backring 14s infinite linear;
+    background-size: 56px;
+    opacity: 0.6;
+}
+
+.loading-img-container .gear-item-10 {
+    width: 50px;
+    height: 50px;
+    background: url(http://118.89.242.134/myBlogResource/img/loading/gear-item-10.png) no-repeat 0 0;
+    position: absolute;
+    left: 204px;
+    top: 28px;
+    z-index: 400;
+    transform: rotate(0deg);
+    animation: backring 14s infinite linear;
+    background-size: 50px;
+}
+
+.loading-img-container .gear-bg-1 {
+    width: 150px;
+    height: 460px;
+    background: url(http://118.89.242.134/myBlogResource/img/loading/gear-bg-1.gif) no-repeat 0 0;
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    transform: translateX(-50%);
+    background-size: 150px;
+}
+
+.loading-img-container .gear-bg-2 {
+    width: 150px;
+    height: 460px;
+    background: url(http://118.89.242.134/myBlogResource/img/loading/gear-bg-2.gif) no-repeat 0 0;
+    position: absolute;
+    left: 50%;
+    top: 72px;
+    transform: translateX(-50%);
+    z-index: 500;
+    background-size: 150px;
+}
+
+@keyframes ring {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes backring {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+/*Loading层样式  结束*/
+</style>
